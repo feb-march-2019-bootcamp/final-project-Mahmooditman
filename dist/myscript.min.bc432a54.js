@@ -105,8 +105,52 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"js/myscript.min.js":[function(require,module,exports) {
+/*!
+ * Start Bootstrap - my-website v5.0.3 ()
+ * Copyright 2013-2019 
+ * Licensed under  (https://github.com/BlackrockDigital/my-bootstrap-website/blob/master/LICENSE)
+ */
+!function (t) {
+  "use strict";
 
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  t('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      var o = t(this.hash);
+      if ((o = o.length ? o : t("[name=" + this.hash.slice(1) + "]")).length) return t("html, body").animate({
+        scrollTop: o.offset().top - 70
+      }, 1e3, "easeInOutExpo"), !1;
+    }
+  }), t(document).scroll(function () {
+    100 < t(this).scrollTop() ? t(".scroll-to-top").fadeIn() : t(".scroll-to-top").fadeOut();
+  }), t(".js-scroll-trigger").click(function () {
+    t(".navbar-collapse").collapse("hide");
+  }), t("body").scrollspy({
+    target: "#mainNav",
+    offset: 80
+  });
+
+  var o = function o() {
+    100 < t("#mainNav").offset().top ? t("#mainNav").addClass("navbar-shrink") : t("#mainNav").removeClass("navbar-shrink");
+  };
+
+  o(), t(window).scroll(o), t(".portfolio-item").magnificPopup({
+    type: "inline",
+    preloader: !1,
+    focus: "#username",
+    modal: !0
+  }), t(document).on("click", ".portfolio-modal-dismiss", function (o) {
+    o.preventDefault(), t.magnificPopup.close();
+  }), t(function () {
+    t("body").on("input propertychange", ".floating-label-form-group", function (o) {
+      t(this).toggleClass("floating-label-form-group-with-value", !!t(o.target).val());
+    }).on("focus", ".floating-label-form-group", function () {
+      t(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function () {
+      t(this).removeClass("floating-label-form-group-with-focus");
+    });
+  });
+}(jQuery);
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -133,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51476" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53174" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -275,4 +319,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/myscript.min.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/myscript.min.js"], null)
+//# sourceMappingURL=/myscript.min.bc432a54.map

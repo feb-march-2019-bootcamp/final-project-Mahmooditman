@@ -1,9 +1,9 @@
 body{
-    font-family:Lato
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 h1,h2,h3,h4,h5,h6{
     font-weight:700;
-    font-family:Montserrat;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 hr.star-dark,hr.star-light{
     max-width:15rem;
@@ -41,14 +41,14 @@ section{
     padding:6rem 0
 }
 section h2{
-    font-size:2.25rem;
-    line-height:2rem
+    font-size:1.75rem;
+    line-height:1.75rem
 }
 @media (min-width:992px)
 {
     section h2{
-        font-size:3rem;
-        line-height:2.5rem
+        font-size:2rem;
+        line-height:2rem
     }
 }
 .btn-xl{
@@ -56,10 +56,11 @@ section h2{
     font-size:1.25rem
 }
 .btn-social{
-    width:3.25rem;
-    height:3.25rem;
-    font-size:1.25rem;
-    line-height:2rem
+    width:3.6rem;
+    height:3.6rem;
+    font-size:2rem;
+    line-height:2.4rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 .scroll-to-top{
     z-index:1042;
@@ -100,13 +101,13 @@ section h2{
     color:#18bc9c
 }
 #mainNav .navbar-toggler{
-    font-size:80%;
-    padding:.8rem
+    font-size:70%;
+    padding:.4rem
 }
 @media (min-width:992px){
     #mainNav{
-        padding-top:1.5rem;
-        padding-bottom:1.5rem;
+        padding-top:0.8rem;
+        padding-bottom:0.8rem;
         -webkit-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s
     }
 #mainNav .navbar-brand{
@@ -141,7 +142,7 @@ header.masthead h1{
     line-height:2rem
 }
 header.masthead h2{
-    font-size:1rem;
+    font-size:0.75rem;
     font-family:Lato
 }
 @media (min-width:992px)
@@ -151,7 +152,7 @@ header.masthead h2{
         padding-bottom:6rem
     }
 header.masthead h1{
-    font-size:3.75em;
+    font-size:3em;
     line-height:4rem
 }
 header.masthead h2{
@@ -215,7 +216,7 @@ header.masthead h2{
         margin:3rem calc(3rem - 8px)
     }
     .portfolio-modal .portfolio-modal-dialog h2{
-        font-size:3rem
+        font-size:2rem
     }
 }
 .floating-label-form-group{
